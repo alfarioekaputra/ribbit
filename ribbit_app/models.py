@@ -2,6 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 import hashlib
 
+
 class Ribbit(models.Model):
     content = models.CharField(max_length = 160)
     user = models.ForeignKey(User)
